@@ -4,11 +4,45 @@ layout: default
 
 # Running SQL scripts
 
-Typing the same sql commands over all the time is painful. Queries gets long and cumbersome and one some times need to run them over and over.
+Typing the same sql commands over all the time is painful. Queries gets long and cumbersome and you need to be able repeatedly run them.
 
-Using SQL scripts makes database maintenance much easier. It helps you to ensure that databases and tables can be reliably dropped, recreated or changed.
+Using SQL scripts makes running queries and database maintenance tasks much easier. It helps you to ensure that databases and tables can be reliably queried, dropped, recreated or changed.
+
+## Creating scripts
 
 SQL scripts are text files that contains SQL commands saved with a `.sql` extension.
+
+Individual SQL commands in a script file are terminated by a semi-colon `;` character. There can be many different SQL commands in the same script.
+
+Here's an example of a script file:
+
+```sql
+-- tell the script which database to use
+-- use can do this before you run the script
+use my_products;
+
+-- you can drop tables
+drop table if exists categories;
+drop table if exists products;
+
+-- you can create tables in the script;
+create table categories(
+    id int primary key auto_increment,
+    description char(100) not null
+);
+
+create table products (
+    id int primary key auto_increment,
+        description char(100) not null,
+    price decimal(10,2),
+    category_id int,
+    foreign key (category_id) references categories(id)
+);
+
+-- you can write a select query to check for data in a table
+select * from products;
+
+```
 
 ## Running scripts
 
