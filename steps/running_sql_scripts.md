@@ -4,9 +4,9 @@ layout: default
 
 # Running SQL scripts
 
-Typing the same sql commands over all the time is painful. Queries gets long and cumbersome and you need to be able repeatedly run them.
+Typing the same SQL commands all the time is painful. Queries get long and cumbersome and you need to be able to run them repeatedly.
 
-Using SQL scripts makes running queries and database maintenance tasks much easier. It helps you to ensure that databases and tables can be reliably queried, dropped, recreated or changed.
+Using SQL scripts makes running queries and database maintenance tasks much easier. They help you to ensure that databases and tables can be reliably queried, dropped, recreated, or changed.
 
 ## Creating scripts
 
@@ -41,16 +41,15 @@ create table products (
 
 -- you can write a select query to check for data in a table
 select * from products;
-
 ```
 
 ## Running scripts
 
 To run SQL scripts you use the `mysql` terminal command.
 
-Login in to mysql using, `mysql -u root -p`
+Login in to MySQL using, `mysql -u root -p`
 
-Once logged into mysql run a script like this:
+Once logged into MySQL run a script like this:
 `source <path_to_script_file.sql>`
 
 Note that the path to the file is relative to where you ran the `mysql` command from.

@@ -4,24 +4,18 @@ layout: default
 
 # Constraints
 
-Constraints determines what values are allowed in database columns.
+Constraints determine what values are allowed in database columns.
 
 ## Foreign keys
 
-Foreign key constraints keep your data consistent by ensuring that values in a column can only contains values that exists in a column in a specified table.
+Foreign key constraints keep your data consistent by ensuring that values in a column can only contain values that exist in a column in a specified table.
 
-One can create foreign keys between tables when the tables already exists.
-
-Like this:
+You can create foreign keys between tables when a table already exists like this:
 
 ```sql
 ALTER TABLE sales ADD CONSTRAINT fk_product_id FOREIGN KEY (product_id) REFERENCES products(id);
 ```
-OR
-
-One can create foreign keys between tables when a table is created.
-
-Like this:
+Or you can create foreign keys between tables when a table is created like this:
 
 ```sql
 create table products (
@@ -33,16 +27,16 @@ create table products (
 );
 ```
 
-See more details [here](http://stackoverflow.com/questions/757181/basics-of-foreign-keys-in-mysql)
+See more details on StackOverflow: [Basics of Foreign Keys in MySQL?](http://stackoverflow.com/questions/757181/basics-of-foreign-keys-in-mysql)
 
 ## Unique Constraints
 
-Ensure that the value in a column is unique. That means that only one column in the table can contain that value.
+These ensure that the value in a column is unique. That means that only one column in the table can contain that value.
 
-One create unique constraints like this:
+You can create unique constraints like this:
 
 ```sql
 ALTER TABLE products ADD UNIQUE product_name_uniq (product_name);    
 ```
 
-See more details [here](http://stackoverflow.com/questions/635937/how-do-i-specify-unique-constraint-for-multiple-columns-in-mysql)
+See more details on StackOverflow: [How do I specify unique constraint for multiple columns in MySQL?](http://stackoverflow.com/questions/635937/how-do-i-specify-unique-constraint-for-multiple-columns-in-mysql)

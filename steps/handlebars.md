@@ -3,13 +3,13 @@ layout: default
 ---
 # Templates
 
-To combine data and html we use a template engine.
+To combine data and HTML we use a template engine.
 
 ## Templating using Handlebars example
 
-We will be using `handlebars` as our template engine, it combines data with templates to render information.
+We will be using `handlebars` as our template engine: it combines data with templates to render information.
 
-A typical handlebars template look likes this
+A typical handlebars template look likes this:
 
 {% highlight html %}
 {% raw %}
@@ -30,7 +30,7 @@ var user = {
 };
 ```
 
-results in this html:
+results in this HTML:
 
 {% highlight html %}
 {% raw %}
