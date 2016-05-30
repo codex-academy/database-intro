@@ -19,9 +19,9 @@ To populate this database from a CSV file you will need to:
 
 Once you have a proper database schema in place with foreign keys between the tables, you you will need to add the data in this order:
 
-* Add the Categories to the database;
-* add Products to the database with foreign keys that reference the Categories table;
-* add Sales & Purchase records to the database, with foreign keys that references entries in the Products table.
+* Populate the Categories table;
+* populate Products table, with foreign keys that reference the Categories table;
+* populate the Sales & Purchase tables, with foreign keys that references the Products table.
 
 ## Adding Categories
 
