@@ -17,17 +17,17 @@ To populate this database from a CSV file you will need to:
 
 ## Database for Nelisa
 
-Once you have a proper database schema in place with foreign keys between the tables, you you will need to add the data in this order:
+Once you have a database schema in place with foreign keys between the tables, you you will need to add the data in this order:
 
 * Populate the Categories table;
 * populate Products table, with foreign keys that reference the Categories table;
 * populate the Sales & Purchase tables, with foreign keys that references the Products table.
 
-## Adding Categories
+## Populating Categories
 
 This one is fairly straightforward, loop through your list of Categories and create a list of lists and use a [bulk insert](/steps/mysql_bulk_insert_using_nodejs.html) add them to the database. The order of the list for each row should match your `sql` insert statement.
 
-## Adding Products
+## Populating Products
 
 What you need:
 * a list of the Categories in the database;
@@ -36,10 +36,10 @@ What you need:
 
 Once you have all the above loop through the products and find the CategoryId for each. Then insert the Products into the database using a Bulk insert.
 
-## Adding Sales & Products
+## Populating Sales & Products
 
-You will need a way to easily map Product names to Product Id's. Create a map using a SQL select query from the `Products` table.
+You will need a way to easily map Product names to Product Id's. Create a map using a SQL select query from the Products table.
 
-Loop through all the Sales records and find the corresponding Product Id for each Sale record. Then use a bulk insert to add all the Sales to the database.
+Loop through all the Sales records and find the corresponding Product Id for each Sale record. Then use a bulk insert to populate Sales to the database.
 
-Use a similar approach for adding Products to the database.
+Use a similar approach than you used for populating Products to the database.
