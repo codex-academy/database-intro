@@ -20,7 +20,7 @@ To populate this database from a CSV file you would need to:
 <<<<<<< HEAD
 Once you have a database [schema](/steps/data_modelling.html/#database-schema) in place with foreign keys between the tables, you you will need to add the data in this order:
 
-* Populate the Categories table;
+* populate the Categories table;
 * populate Products table, with foreign keys that reference the Categories table;
 * populate the Sales & Purchase tables, with foreign keys that references the Products table.
 =======
