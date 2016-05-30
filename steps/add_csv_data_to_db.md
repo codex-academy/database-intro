@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Add data to your database
+# Populate a database
 
 Populating a relational database from CSV files can be tricky due to the relationships between tables. The relationships are enforced by foreign keys constraints on each table. The foreign key constraints enforce the correct relationships between tables, that is that the foreign key columns contains values that exists in the corresponding column in the referenced table. As a result the order in which rows are added to the tables in a relational database is very important.
 
@@ -17,7 +17,7 @@ To populate this database from a CSV file you will need to:
 
 ## Database for Nelisa
 
-Once you have a database schema in place with foreign keys between the tables, you you will need to add the data in this order:
+Once you have a database [schema](/steps/data_modelling.html/#database-schema) in place with foreign keys between the tables, you you will need to add the data in this order:
 
 * Populate the Categories table;
 * populate Products table, with foreign keys that reference the Categories table;
@@ -42,4 +42,4 @@ You will need a way to easily map Product names to Product Id's. Create a map us
 
 Loop through all the Sales records and find the corresponding Product Id for each Sale record. Then use a bulk insert to populate Sales to the database.
 
-Use a similar approach than you used for populating Products to the database.
+Use a similar approach that you used for populating Products to the database.

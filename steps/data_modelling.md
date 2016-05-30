@@ -20,4 +20,4 @@ Once the above questions are answered we have the basic information for creating
 
 ## Database schema
 
-A database [schema](http://stackoverflow.com/a/25094254/229493) is the physical implementation of the a data model in a database management system (DBMS). The DBMS or database that you will use is MySQL. You use [SQL scripts](/steps/running_sql_scripts.html) to create the database, tables and foreign keys.
+A database [schema](http://stackoverflow.com/a/25094254/229493) is a physical implementation of the a data model in a database management system (DBMS). The DBMS or database that you will use is MySQL. You use [SQL scripts](/steps/running_sql_scripts.html) to create the database, tables and foreign keys.
