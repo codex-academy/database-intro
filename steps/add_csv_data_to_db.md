@@ -25,7 +25,7 @@ Once you have a proper database schema in place with foreign keys between the ta
 
 ## Adding Categories
 
-This one is fairly straightforward, loop through your list of Categories and then to a list of lists and use a [bulk insert](/steps/mysql_bulk_insert_using_nodejs.html) add them to the database. The order of the list for each row should match your `sql` insert statement.
+This one is fairly straightforward, loop through your list of Categories and create a list of lists and use a [bulk insert](/steps/mysql_bulk_insert_using_nodejs.html) add them to the database. The order of the list for each row should match your `sql` insert statement.
 
 ## Adding Products
 
