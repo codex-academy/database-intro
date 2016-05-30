@@ -6,7 +6,7 @@ layout: default
 
 Populating a relational database from CSV files can be tricky due to the relationships between tables. The relationships are enforced by foreign keys constraints on each table. The foreign key constraints enforce the correct relationships between tables, that is that the foreign key columns contains values that exists in the corresponding column in the referenced table. As a result the order in which rows are added to the tables in a relational database is very important.
 
-Say for example you have a football team database with tables for `Positions`, `Players` and `Teams`. Each player have a position and and each team have multiple players, the database use a `TeamPlayers` table, to link players to teams. The database have foreign key constraints to ensure that `Players` can only use positions that exists in the `Positions` table and that the `TeamPlayers` table can only cont
+Say for example you have a football team database with tables for `Positions`, `Players` and `Teams`. Each player have a position and and each team have multiple players, the database use a `TeamPlayers` table, to link players to teams. The database have foreign key constraints to ensure that `Players` can only use positions that exists in the `Positions` table and that the `TeamPlayers` table can only contains valid `Players` and `Teams` foreign key id's.  
 
 To populate this database from a CSV file you will need to:
 
