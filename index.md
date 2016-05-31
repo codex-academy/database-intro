@@ -5,7 +5,7 @@ title: Index
 
 # Data Modeling and Persistence
 
-Applications need a way of storing and manipulating data. That is what databases are for. Databases make it easy to store, structure, retrieve and manage data.
+Applications need a way of storing and manipulating data. That is what databases are for. Databases let you store, structure, retrieve and manage data.
 
 ## Database basics
 
