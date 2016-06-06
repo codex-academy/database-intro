@@ -17,7 +17,7 @@ To populate this database from a CSV file you would need to:
 
 ## Database for Nelisa
 
-Once you have a database [schema](/steps/data_modelling.html/#database-schema) in place with foreign keys between the tables, you you will need to add the data in this order:
+Once you have a database [schema](/steps/data_modelling.html#database-schema) in place with foreign keys between the tables, you you will need to add the data in this order:
 
 * populate the Categories table;
 * populate Products table, with foreign keys that reference the Categories table;
